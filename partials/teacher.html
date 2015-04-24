@@ -1,5 +1,22 @@
 <div>
   <h1>Who is here?</h2>
   <h4>( ͡° ͜ʖ ͡°)</h4>
+  <hr/>
+  <!-- present students list -->
+  <h4>Present:</h4>
+  <div ng-repeat="student in students" ng-show="student.present">
+    <ul>
+      <li>{{ student.name }}</li>
+    </ul>
+  </div>
+
+  <!-- not present students list -->  
+  <h4>Missing in Action:</h4>
+  <div ng-repeat="student in students" ng-show="!student.present">
+    <ul>
+      <li>{{ student.name }}</li>
+    </ul>
+  </div>
+
   <button ui-sref="home" class="btn btn-success">Back Home</button>
 </div>

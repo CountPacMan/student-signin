@@ -1,5 +1,6 @@
 signin.controller('SignInCtrl', function SignInCtrl($scope, $state, StudentFactory) {
-  $scope.student = StudentFactory;
+  $scope.StudentFactory = StudentFactory;
+  $scope.students = StudentFactory.students;
 
   $scope.teacherSignIn = function() {
     console.log("hi");
