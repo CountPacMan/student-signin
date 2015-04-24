@@ -4,5 +4,13 @@ ul {
 }
 
 .btn-width {
-    width: 78px !important;
+  width: 78px !important;
+}
+
+.here {
+  background-color: lightblue;
+}
+
+.missing {
+  background-color: pink;
 }

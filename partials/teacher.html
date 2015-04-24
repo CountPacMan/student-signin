@@ -4,19 +4,19 @@
   <hr/>
   <!-- present students list -->
   <h4>Present:</h4>
-  <div ng-repeat="student in students | orderBy:'name'" ng-show="student.present">
-    <ul>
-      <li>{{ student.name }}</li>
-    </ul>
-  </div>
+  <ul class="well well-lg here">
+    <div ng-repeat="student in students | orderBy:'name'" ng-show="student.present">
+        <li>{{ student.name }}</li>
+    </div>
+  </ul>
 
   <!-- not present students list -->
   <h4>Missing in Action:</h4>
-  <div ng-repeat="student in students | orderBy:'name'" ng-show="!student.present">
-    <ul>
-      <li>{{ student.name }}</li>
-    </ul>
-  </div>
+  <ul class="well well-lg missing">
+    <div ng-repeat="student in students | orderBy:'name'" ng-show="!student.present">
+        <li>{{ student.name }}</li>
+    </div>
+  <ul>
 
   <button ui-sref="home" class="btn btn-success">Back Home</button>
 </div>
