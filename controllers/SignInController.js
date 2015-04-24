@@ -3,11 +3,14 @@ signin.controller('SignInCtrl', function SignInCtrl($scope, $state, StudentFacto
   $scope.students = StudentFactory.students;
 
   $scope.teacherSignIn = function() {
-    console.log("hi");
     $state.go('/teacher');
   };
 
   $scope.studentSignIn = function() {
     $state.go('/student');
   };
+
+  $scope.setPresent = function(student) {
+    $scope.StudentFactory.updateSignIn(student)
+  }
 });

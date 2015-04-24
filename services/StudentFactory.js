@@ -9,7 +9,8 @@ signin.factory('StudentFactory', function() {
     { name: "Gloria Swanson", present: false }
   ];
 
-  factory.updateSignIn = function(index) {
+  factory.updateSignIn = function(student) {
+    var index = factory.students.indexOf(student);
     factory.students[index].present = !factory.students[index].present;
   };
 

@@ -6,8 +6,8 @@
   <div ng-repeat="student in students">
     <ul>
       <li>
-        <button ng-show="!student.present" ng-click="setPresent()" class="btn btn-info">Sign-In</button>
-        <button ng-show="student.present" ng-click="setPresent()" class="btn btn-danger">Sign-Out</button>
+        <button ng-show="!student.present" ng-click="setPresent(student)" class="btn btn-info">Sign-In</button>
+        <button ng-show="student.present" ng-click="setPresent(student)" class="btn btn-danger">Sign-Out</button>
         {{ student.name }}
       </li>
     </ul>
