@@ -1,4 +1,4 @@
-var singin = angular.module('signin', ['ui.router']);
+var signin = angular.module('signin', ['ui.router']);
 
 signin.config(function($stateProvider) {
   $stateProvider.state('home', {
