@@ -12,5 +12,5 @@ signin.controller('SignInCtrl', function SignInCtrl($scope, $state, StudentFacto
 
   $scope.setPresent = function(student) {
     $scope.StudentFactory.updateSignIn(student)
-  }
+  };
 });
