@@ -6,7 +6,7 @@
   <h4>Present:</h4>
   <ul class="well well-lg here">
     <div ng-repeat="student in students | orderBy:'name'" ng-show="student.present">
-        <li>{{ student.name }}</li>
+      <li>{{ student.name }}</li>
     </div>
   </ul>
 
@@ -14,7 +14,7 @@
   <h4>Missing in Action:</h4>
   <ul class="well well-lg missing">
     <div ng-repeat="student in students | orderBy:'name'" ng-show="!student.present">
-        <li>{{ student.name }}</li>
+      <li>{{ student.name }}</li>
     </div>
   <ul>
 
