@@ -10,8 +10,7 @@ signin.factory('StudentFactory', function() {
   ];
 
   factory.updateSignIn = function(student) {
-    var index = factory.students.indexOf(student);
-    factory.students[index].present = !factory.students[index].present;
+    student.present = !student.present;
   };
 
   return factory;
